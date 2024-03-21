@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ad</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <div class="container">                              
+        <form action="#" id="converter">
+            <label for="input-temp" >Temperature</label>
+            <input type="text" id="input-temp" name="input-temp" value="20" />
+            <label for="input-unit">from</label>
+            <select name="input-unit" id="input-unit">
+                <option value="c" selected>Celcius</option>
+                <option value="f">Fahrenheit</option>
+                <option value="k">Kelvine</option>
+            </select>
+            <label for="output-unit">toc</label>
+            <select name="output-unit" id="output-unit">
+                <option value="c">Celcius</option>
+                <option value="f" selected>Fahrenheit</option>
+                <option value="k">Kelvine</option>
+            </select>
+            <output name="output-temp" id="output-temp" for="input-temp input-unit output-temp">
+        </form>
+    </div>    
+    <script>
+        if('serviceworker' in navifator){
+            navigator.serviceworker.register('sw.js',{scope:'/pwa/'})
+        }else{
+            console.log('not in navigator');
+        }
+    </script>
+</body>
+</html>

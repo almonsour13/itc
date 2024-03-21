@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(231, 231, 231);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+#converter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+}
+label{
+    margin-top: 10px;
+}
+input,select{
+    background-color: rgb(231, 231, 231);
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+output{
+    background-color: rgb(231, 231, 231);
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+}

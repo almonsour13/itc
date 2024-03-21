@@ -1,0 +1,28 @@
+ {
+    "lang":"en-us",
+    "name":"Temperature converter app",
+    "short_name":"Temperature converter",
+    "description":"A basic termperature converter application ",
+    "start_url":"#2f38d58",
+    "theme_color":"#2f3d58",
+    "orientation":"any",
+    "display":"standalone",
+    "icons":{
+        "src":"/icons512.png"
+    },
+    "screenshot":[
+        {
+            "src":"images/",
+            "type":"image/png",
+            "sizes":"",
+            "form_factor":"narrow"
+        },
+        {
+            "src":"images/",
+            "type":"image/png",
+            "sizes":"",
+            "form_factor":"wide"
+        }
+    ]
+    
+ }
